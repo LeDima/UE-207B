@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'd:\PyProg\GUI2.ui'
+# Form implementation generated from reading ui file 'D:\GitTestProject\UE-207B\GUI2.ui'
 #
 # Created by: PyQt5 UI code generator 5.6
 #
@@ -29,10 +29,6 @@ class Ui_TabWidget(object):
         self.pushButton.setCheckable(False)
         self.pushButton.setAutoDefault(False)
         self.pushButton.setObjectName("pushButton")
-        self.webEngineView = QWebEngineView(self.tab2)
-        self.webEngineView.setGeometry(QtCore.QRect(210, 50, 891, 611))
-        self.webEngineView.setUrl(QtCore.QUrl("file:///D:/PyProg/temp-plot.html"))
-        self.webEngineView.setObjectName("webEngineView")
         TabWidget.addTab(self.tab2, "")
 
         self.retranslateUi(TabWidget)
@@ -46,4 +42,3 @@ class Ui_TabWidget(object):
         self.pushButton.setText(_translate("TabWidget", "PushButton"))
         TabWidget.setTabText(TabWidget.indexOf(self.tab2), _translate("TabWidget", "Tab 2"))
 
-from QtWebEngineWidgets.QWebEngineView import QWebEngineView
