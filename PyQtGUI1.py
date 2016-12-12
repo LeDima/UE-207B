@@ -4,10 +4,10 @@ Created on Wed Dec 07 09:27:18 2016
 
 @author: Dima
 """
-import PyQt4
-from PyQt5.QtWebEngineWidgets.QWebEngineView import QWebEngineView
+#import PyQt4
+##import PyQt5.QtWebEngineWidgets 
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5 import QtWidgets
  
 from GUI2 import Ui_TabWidget
 
@@ -34,7 +34,7 @@ class gui2w(Ui_TabWidget):
             
     def PrintVal (self):
         fname = QtWidgets.QFileDialog.getOpenFileName()[0]
-        print fname
+        print(fname)
         if fname != "":
             engine = create_engine(r'sqlite:///'+fname) # Создание подключения к БД 
 
@@ -114,16 +114,16 @@ class gui2w(Ui_TabWidget):
                 )
             )
             fig = go.Figure(data=[trace1,trace2,trace3,trace4,trace5,trace6,trace7,trace8], layout=layout)
-            print(type(fig))
             plot(fig,filename='temp-plot.html', auto_open=False,)
-            print(4)
         else:
-            pass
+            print(2)
         return None
 
 
 if __name__ == "__main__":
     import sys
+    #import pyqtgraph.examples
+    #pyqtgraph.examples.run()
     app = QtWidgets.QApplication(sys.argv)
     TabWidget = QtWidgets.QTabWidget()
     ui = gui2w(TabWidget)
