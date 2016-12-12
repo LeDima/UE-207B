@@ -5,7 +5,8 @@ Created on Wed Dec 07 09:27:18 2016
 @author: Dima
 """
 #import PyQt4
-##import PyQt5.QtWebEngineWidgets 
+#import PyQt4.QtWebEngineWidgets 
+#import PyQt5
 
 from PyQt5 import QtWidgets
  
@@ -122,8 +123,8 @@ class gui2w(Ui_TabWidget):
 
 if __name__ == "__main__":
     import sys
-    #import pyqtgraph.examples
-    #pyqtgraph.examples.run()
+    import pyqtgraph.examples
+    pyqtgraph.examples.run()
     app = QtWidgets.QApplication(sys.argv)
     TabWidget = QtWidgets.QTabWidget()
     ui = gui2w(TabWidget)
