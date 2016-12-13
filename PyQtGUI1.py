@@ -123,8 +123,8 @@ class gui2w(Ui_TabWidget):
 
 if __name__ == "__main__":
     import sys
-    import pyqtgraph.examples
-    pyqtgraph.examples.run()
+    #import pyqtgraph.examples
+    #pyqtgraph.examples.run()
     app = QtWidgets.QApplication(sys.argv)
     TabWidget = QtWidgets.QTabWidget()
     ui = gui2w(TabWidget)
